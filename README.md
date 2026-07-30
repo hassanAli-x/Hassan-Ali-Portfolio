@@ -1,43 +1,91 @@
 # Hassan Ali — Portfolio
 
-Mobile-first portfolio site built with React, Vite, and Tailwind CSS.
+A modern, responsive portfolio website built with **React**, **Vite**, and **Tailwind CSS** to showcase projects, skills, and experience.
 
-## Setup
+## Features
+
+* Responsive, mobile-first design
+* Light and dark mode
+* Project showcase
+* Skills and technologies section
+* Resume page
+* Contact page
+* Clean, modern UI
+
+## Tech Stack
+
+* React
+* Vite
+* Tailwind CSS
+* React Router
+
+## Getting Started
+
+Clone the repository and install the dependencies:
 
 ```bash
 npm install
+```
+
+Start the development server:
+
+```bash
 npm run dev
 ```
 
-Open http://localhost:5173.
+Open your browser and visit:
 
-## Before you deploy
+```
+http://localhost:5173
+```
 
-1. Drop your actual resume PDF at `public/resume.pdf` (used by the Resume page for preview + download).
-2. Double-check the CGPA in `src/data/experience.js` — the CV you attached says 3.28, your message said 3.30. Update whichever is correct.
-3. Fill in real project links (`github` / `live`) in `src/data/projects.js` — right now every project links to your GitHub profile, not the specific repo.
-4. Swap placeholder social links in `src/data/experience.js` if any are off.
+## Production Build
 
-## Build
+Create an optimized production build:
 
 ```bash
 npm run build
+```
+
+Preview the production build locally:
+
+```bash
 npm run preview
 ```
 
-## Deploy
+## Project Structure
 
-Works out of the box on Vercel, Netlify, or GitHub Pages (static build in `dist/`).
+```
+src/
+├── components/
+│   ├── layout/
+│   ├── sections/
+│   └── ui/
+├── context/
+├── data/
+├── pages/
+├── App.jsx
+└── main.jsx
+```
 
-## Structure
+## Customization
 
-- `src/pages/` — the 5 routes: Home, Projects, About, Resume, Contact
-- `src/components/sections/` — page sections (Hero, SkillsGrid, ExperienceTimeline, etc.)
-- `src/components/ui/` — reusable primitives (Button, Card, Badge, SectionHeading)
-- `src/components/layout/` — Navbar, Footer, ThemeToggle
-- `src/data/` — your content (projects, skills, experience) — edit these files to update the site
-- `src/context/ThemeContext.jsx` — dark/light mode, persisted to localStorage
+You can easily personalize the portfolio by updating the files inside the `src/data/` directory with your own:
 
-## Design notes
+* Projects
+* Skills
+* Experience
+* Personal information
+* Social links
 
-Dev-console visual language: monospace (JetBrains Mono) for headings/labels, Inter for body text, ink/paper base colors with a signal-green accent. The hero is styled as a terminal window running `whoami`, and the experience section reads like a `git log`. Dark mode toggles the `dark` class on `<html>`; Tailwind's `darkMode: 'class'` handles the rest.
+## Deployment
+
+This project can be deployed to any static hosting platform, including:
+
+* Vercel
+* Netlify
+* GitHub Pages
+
+## License
+
+This project is intended for personal portfolio use.
